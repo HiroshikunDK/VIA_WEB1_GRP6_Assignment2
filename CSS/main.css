@@ -1,49 +1,87 @@
-.collapse_Services{
-    cursor: pointer;
-    display: block;
-    background: #cdf;
-  }
-  input + div{
-    display:none;
-  }
-  input:checked + div{
-    display:block;
+/*Main color scheme usage: var(--main-color)*/
+:root {
+    --main-color:#CB6A41;
+    --main-color-Darkened:#aa5937;
+    --main-color-Lighter:#ff8450;
+}
+
+/*General CSS styling */
+
+
+a{
+    width: 100px;
+    height: 50px;
+    background-color: var(--main-color-Lighter);
   }
 
-  .blok{
+label{
     width: 100px;
     height: 50px;
-    background-color: black;
-  }
-  a{
-    width: 100px;
-    height: 50px;
-    background-color: aqua;
-  }
-
-  label{
-    width: 100px;
-    height: 50px;
-    background-color: aqua;
+    background-color: var(--main-color-Lighter);
   }
 
   .hideElement{
     display: none;
   }
 
- 
+
+/* Services CSS*/
+
+.collapse_Services{
+    cursor: pointer;
+    display: block;
+    background: var(--main-color-Lighter);
+  }
+
+  .Services_mobilecontent{
+    width: 100vw;
+    position: relative;
+  }
+
+  .categoryText_Services{
+    position: relative;
+    float: left;
+    width: 100vw;
+  }
+
+  .full_info_container_services{
+    padding: 0px 10px 0px 10px;
+  }
+  /**/
+
+
+/*Dropdown menu buttons Services*/ 
+.btn{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    background-color: var(--main-color-Lighter);
+}
+
+.btn-primary{
+    background-color: var(--main-color-Lighter);
+}
+
 .dropbtn {
-    background-color: #04AA6D;
+    background-color: var(--main-color-Lighter);
     width: 100vw;
     color: white;
-    padding: 16px;
     font-size: 16px;
     border: none;
   }
   
-  .dropdown {
+  .dropdown_services {
     position: relative;
     display: inline-block;
+    width: 100vw;
+    background-color: var(--main-color-Lighter);
+  }
+
+  .dropdown-toggle{
+    background-color: var(--main-color-Lighter);
+  }
+
+  .dropdown{
     width: 100vw;
   }
   
@@ -51,9 +89,7 @@
     display: none;
     position: absolute;
     background-color: #f1f1f1;
-    min-width: 160px;
     width: 100vw;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
   }
   
@@ -61,13 +97,85 @@
     text-align: center;
     width: 100vw;
     color: black;
-    padding: 12px 16px;
     text-decoration: none;
     display: block;
   }
   
-  .dropdown-content a:hover {background-color: #ddd;}
+  input + div{
+    display:none;
+  }
+  input:checked + div{
+    display:block;
+  }
+
+  .Services_mobilecontent:hover .dropdown-content{display: none;}
+
+  .dropdown .dropdown-content {display: none;}
   
   .dropdown:hover .dropdown-content {display: block;}
   
-  .dropdown:hover .dropbtn {background-color: #3e8e41;}
+  .dropdown:hover .dropbtn {background-color: var(--main-color-Lighter);}
+
+  /*Images CSS*/
+  #BackgroundImageRB_Services{
+    background-image: url(../Images/LejlighedsKompleks2.jpg);
+    height: 100vh;
+    min-width: 100vw;
+    position: absolute;
+    background-position-x: center;
+    background-position-y:center;
+    overflow: hidden;
+    z-index: -1;
+    opacity: 0.2;
+    display: inherit;
+    background-repeat: no-repeat;
+  }
+
+  #BackgroundImageCB_Services{
+    background-image: url(../Images/KontorByggeri1.jpg);
+    height: 100vh;
+    min-width: 100vw;
+    position: absolute;
+    background-position-x: center;
+    background-position-y:center;
+    overflow: hidden;
+    z-index: -1;
+    opacity: 0.2;
+    display: inherit;
+    background-repeat: no-repeat;
+  }
+
+  #BackgroundImageIC_Services{
+    background-image: url(../Images/FabriksByggeri2.jpg);
+    height: 100vh;
+    min-width: 100vw;
+    position: absolute;
+    background-position-x: center;
+    background-position-y:center;
+    overflow: hidden;
+    z-index: -1;
+    opacity: 0.2;
+    display: inherit;  
+    background-repeat: no-repeat;
+  }
+
+  #BackgroundImageRC_Services{
+    background-image: url(../Images/Vejbyggeri1.jpg);
+    height: 100vh;
+    min-width: 100vw;
+    position: absolute;
+    background-position-x: center;
+    background-position-y:center;
+    overflow: hidden;
+    z-index: -1;
+    opacity: 0.2;
+    display: inherit; 
+    background-repeat: no-repeat;
+  }
+
+
+  /*
+
+
+
+  */
