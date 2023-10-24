@@ -12,6 +12,7 @@
   text-align: center;
   margin: 10px;
   position: relative;
+  justify-content: center;
 }
 
 /* Size */
@@ -24,7 +25,7 @@
 /*text boxes */
 .description {
   position: absolute;
-  background-color: grey;
+  background-color: var(--main-color);
   color: black;
   width: 600px;
   text-align: center;
