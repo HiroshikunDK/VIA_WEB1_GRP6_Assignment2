@@ -1,31 +1,33 @@
 /* Allows flexible layout */
 .row {
-    display: flex;
-    flex-wrap: wrap; 
+  display: flex;
+  flex-wrap: wrap;
 }
 
 /* Picture spaceing */
 .image-container {
-    flex: 1;
-    text-align: center;
-    margin: 10px;
-    position: relative;
+  display: flex;
+  align-items: center;
+  flex: 1;
+  text-align: center;
+  margin: 10px;
+  position: relative;
 }
 
 /* Size */
 .image {
-    width: 600px;
-    height: 450px;
-    object-fit: cover;
+  width: 600px;
+  height: 450px;
+  object-fit: cover;
 }
 
 /*text boxes */
 .description {
-    position: absolute; 
-    background-color: grey; 
-    color: black; 
-    width: 600px; 
-    text-align: center; 
-    padding: 10px 0px 10px 0px; 
-    bottom: 0; 
+  position: absolute;
+  background-color: grey;
+  color: black;
+  width: 600px;
+  text-align: center;
+  padding: 10px 0px 10px 0px;
+  bottom: 0;
 }

@@ -4,24 +4,39 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kontakt</title>
-    <link rel="stylesheet" href="./CSS/contact.css" />
     <link rel="stylesheet" href="./CSS/bootstrap.css" />
+    <link rel="stylesheet" href="./CSS/main.css" />
+    <link rel="stylesheet" href="./CSS/contact.css" />
   </head>
   <body>
-    <!-- NAVBAR -->
+    <!-- DESKTOP NAVBAR -->
     <nav class="navbar-custom">
       <div class="navbar-container">
         <a href="index.html" class="brand-logo">?LOGO?</a>
         <!-- MENU -->
         <div class="d-none d-md-flex navbar-menu">
-          <a href="index.html" class="nav-link">Hjem</a>
-          <a href="Services.html" class="nav-link">Services</a>
-          <a href="#" class="nav-link">Portfolio</a>
-          <a href="#" class="nav-link">Vores Projekter</a>
-          <a href="contact.html" class="nav-link">Kontakt</a>
+          <a href="index.html" class="nav-link-desktop">Hjem</a>
+          <a href="Services.html" class="nav-link-desktop">Services</a>
+          <a href="Portfolio.html" class="nav-link-desktop">Portfolio</a>
+          <a href="#" class="nav-link-desktop">Vores Projekter</a>
+          <a href="contact.html" class="nav-link-desktop">Kontakt</a>
         </div>
-        <!-- MOBILE MENU BTN -->
-        <button class="d-md-none mobile-menu-btn">
+      </div>
+    </nav>
+
+    <!-- MOBILE NAV MENU -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary d-md-none">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
           <svg
             width="35"
             height="35"
@@ -39,6 +54,27 @@
             </g>
           </svg>
         </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Projekter.html">Vores Projekter</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="contact.html"
+                >Kontakt</a
+              >
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
     <main>
@@ -242,5 +278,6 @@
       </div>
       <p class="copyright">Copyright &copy; 2023. All rights reserved.</p>
     </div>
+    <script src="./js/bootstrap.js"></script>
   </body>
 </html>
