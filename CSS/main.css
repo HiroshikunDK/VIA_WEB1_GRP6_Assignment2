@@ -1,9 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
 /*Main color scheme usage: var(--main-color)*/
 :root {
   --main-color: #cb6a41;
   --main-color-Darkened: #aa5937;
   --main-color-Lighter: #ff8450;
   --main-color-LighterOpacity50: rgb(255, 132, 80, 0.5);
+}
+
+* {
+  font-family: Inter;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
 }
 
 /*General CSS styling */
@@ -89,6 +104,11 @@
   .navbar-custom {
     display: none;
   }
+}
+
+.navbar-space {
+  margin-top: 80px;
+  min-height: 100vh;
 }
 
 /* FOOTER */
