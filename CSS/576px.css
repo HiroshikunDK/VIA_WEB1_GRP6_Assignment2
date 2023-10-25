@@ -16,7 +16,7 @@
     position: relative;
     float: left;
     width: 100vw;
-    z-index: -1;
+    z-index: 5;
   }
 
   .full_info_container_services{
@@ -40,7 +40,6 @@
     margin: 0 0 0 0 !important;
     border: 0 0 0 0 !important;
     background-color: var(--main-color-Lighter);
-    transition-delay: 1s;
 }
 
 .btn-primary{
@@ -53,7 +52,6 @@
     color: white;
     font-size: 16px;
     border: none;
-    
   }
   
   .dropdown_services {
@@ -99,9 +97,9 @@
     display:block;
   }
 
-  .Services_mobilecontent:hover .dropdown-content{display: none; transition-delay: 1s;}
+  .Services_mobilecontent:hover .dropdown-content{display: none;}
 
-  .dropdown .dropdown-content {display: none; transition-delay: 1s;}
+  .dropdown .dropdown-content {display: none;}
   
   .dropdown:hover .dropdown-content {display: block;}
   
