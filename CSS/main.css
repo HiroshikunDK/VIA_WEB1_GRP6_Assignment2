@@ -114,6 +114,10 @@ html {
   min-height: 100vh;
 }
 
+.active-page {
+  background-color: #dededef9;
+}
+
 /* FOOTER */
 
 .footer {
