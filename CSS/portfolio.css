@@ -18,14 +18,34 @@ section {
   grid-template-columns: 1fr;
 }
 
+.individual-project {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 400px;
+}
+
 .project-img {
   max-width: 100%;
   display: block;
+  height: auto;
 }
 
 .textbox {
   background-color: #f1f1f1;
   padding: 15px;
+  flex-grow: 1;
+}
+
+.project-img {
+  max-width: 100%;
+  display: block;
+}
+
+@media screen and (max-width: 767px) {
+  section {
+    margin-top: 50px;
+  }
 }
 
 @media screen and (min-width: 600px) {
@@ -39,38 +59,3 @@ section {
     grid-template-columns: repeat(3, 1fr);
   }
 }
-
-/* Allows flexible layout */
-/* .row {
-  display: flex;
-  flex-wrap: wrap;
-} */
-
-/* Picture spaceing */
-/* .image-container {
-  display: flex;
-  align-items: center;
-  flex: 1;
-  text-align: center;
-  margin: 10px;
-  position: relative;
-  justify-content: center;
-} */
-
-/* Size */
-/* .image {
-  width: 600px;
-  height: 450px;
-  object-fit: cover;
-} */
-
-/*text boxes */
-/* .description {
-  position: absolute;
-  background-color: var(--main-color);
-  color: black;
-  width: 600px;
-  text-align: center;
-  padding: 10px 0px 10px 0px;
-  bottom: 0;
-} */
